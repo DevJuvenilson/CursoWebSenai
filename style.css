@@ -1,0 +1,17 @@
+h1, h2 {
+    text-align: center;
+}
+
+a {
+    color: blue;
+}
+
+div {
+    border-style: solid;
+    width: 300px;
+}
+
+content {
+    grid-column: 1fr 1fr;
+    background-color: beige;
+}
