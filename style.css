@@ -9,9 +9,30 @@ a {
 div {
     border-style: solid;
     width: 300px;
+    text-align: center;
+    width: 350px;
+    height: 350px;
+    border-radius: 2rem;
+    grid-template-columns: 1fr 1fr;
 }
 
-content {
+.content {
     grid-column: 1fr 1fr;
     background-color: beige;
+}
+
+.iP15Pm {
+    background-color: grey;
+}
+
+.iP15P {
+    background-color: pink;
+}
+
+.iPhoneRosa {
+    color: rgb(119, 91, 96);
+}
+
+.iPhoneCinza {
+    color: rgb(217, 217, 217);
 }
