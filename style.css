@@ -1,24 +1,40 @@
-h1, h2 {
-    text-align: center;
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
-a {
-    color: blue;
+h1, h2 {
+    text-align: center;
 }
 
 div {
     border-style: solid;
     width: 300px;
     text-align: center;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     border-radius: 2rem;
     grid-template-columns: 1fr 1fr;
+}
+
+.iPhones {
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .content {
     grid-column: 1fr 1fr;
     background-color: beige;
+}
+
+ol .iPhones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .iP15Pm {
@@ -36,3 +52,21 @@ div {
 .iPhoneCinza {
     color: rgb(217, 217, 217);
 }
+
+@media screen and (min-width: 380px) {
+    .iPhones {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+@media screen and (min-width: 576px) {
+    .iPhones {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+@media screen and (min-width: 992px) {
+    .iPhones {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
