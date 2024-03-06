@@ -1,6 +1,6 @@
 # TAGs DE SEMÂNTICA
 
-## SITES ÚTEIS
+## SITES ÚTEIS PARA ÍCONES
 
 www.iconarchive.com
 www.favicon.cc
