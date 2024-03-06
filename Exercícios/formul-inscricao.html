@@ -16,11 +16,108 @@
     <hr>
 
     <main>
+        <section>
+            <!--FORMULÁRIO-->
+            <form action="#" method="post">
 
+                <!--CAMPO DE DADOS PESSOAIS-->
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+
+                    <!--NOME-->
+                    <label>Nome</label>
+                    <input type="text" name="nome" placeholder="Digite seu nome" required>
+
+                    <!--DATA DE NASCIMENTO-->
+                    <label>Data de nascimento</label>
+                    <input type="date" name="data-nascimento" required>
+
+                    <!--TELEFONE-->
+                    <label>Telefone</label>
+                    <input type="tel" name="telefone" placeholder="(xx)xxxxx-xxxx" minlength="11" maxlength="11" required>
+
+                    <!--CPF-->
+                    <label>CPF</label>
+                    <input type="number" name="cpf" placeholder="Informe seu CPF" required>
+
+                    <!--E-MAIL-->
+                    <label>E-mail</label>
+                    <input type="email" name="email" placeholder="Informe seu e-mail" required>
+                </fieldset>
+
+                <!--CAMPO DE ENDEREÇO-->
+                <fieldset>
+                    <legend>Endereço</legend>
+
+                    <!--NÚMERO DA CNH-->
+                    <label>Endereço</label>
+                    <input type="text" name="numero_registro" placeholder="Informe seu endereço" required>
+
+                    <!--CIDADE-->
+                    <label>Cidade</label>
+                    <input type="text" name="cidade" placeholder="Informe sua cidade" required>
+
+                    <!--ESTADO-->
+                    <label>Estado</label>
+                    <input type="text" name="estado" placeholder="Informe seu estado">
+                </fieldset>
+
+                <!--CAMPO PARA ESCOLHER O PLANO-->
+                <fieldset>
+                    <legend>Planos</legend>
+
+                    <!--PLANO ESPECTADOR-->
+                    <input type="radio" name="estado" placeholder="Informe seu estado" required>
+                    <label>Plano Espectador</label>
+                    
+                    <!--PLANO JOGADOR-->
+                    <input type="radio" name="estado" placeholder="Informe seu estado" required>
+                    <label>Plano Jogador</label>
+
+                    <!--PLANO TÉCNICO-->
+                    <input type="radio" name="estado" placeholder="Informe seu estado" required>
+                    <label>Plano Técnico</label>
+                </fieldset>
+
+                <!--CAMPO PARA OPINIÃO-->
+                <fieldset>
+                    <legend>Fale sobre sua história com o Real Madrid</legend>
+                    <textarea name="campo-opiniao" cols="50" rows="7" style="resize: none;"></textarea>
+                </fieldset>
+
+                <!--CAMPO PARA ACEITAR TERMOS-->
+                <fieldset>
+                    <legend>Termos de contrato</legend>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque atque, alias voluptatibus dignissimos perferendis porro ratione distinctio natus aliquid similique quos officiis mollitia fuga excepturi corrupti impedit facilis. Amet, fugiat?
+                    Quidem aliquam architecto labore saepe tempora rerum, doloremque sint eveniet sapiente quisquam sit officia a ad nesciunt aliquid quo voluptatum. Ducimus ex recusandae sit vitae tempora necessitatibus et sint ratione.
+                    Quos consectetur, obcaecati voluptatibus cum quod vero rerum tempora earum odit asperiores omnis assumenda. Cumque pariatur laborum impedit, numquam eligendi necessitatibus consectetur qui culpa quisquam dignissimos a ex tempore quidem.
+                    Quae tenetur in ipsum dignissimos fugiat autem repudiandae impedit corporis iure perferendis doloribus beatae consequatur exercitationem architecto adipisci debitis iusto nisi, amet provident earum quia? Officia ad perferendis similique dolor.</p>
+                    
+                    <!--CHECKBOX ACEITO TERMOS-->
+                    <input type="checkbox" name="Aceito-termo">
+                    <label>Li e aceito os termos de contrato</label>
+                    
+                    <!--CHECKBOX ACEITO NOTÍCIAS-->
+                    <input type="checkbox" name="Aceito-news">
+                    <label>Aceito receber notícias</label>
+                </fieldset>
+
+                <br>
+
+                <!--BOTÃO DE ENVIO-->
+                <button type="submit">Enviar dados</button>
+            </form>
+        </section>
+
+        <br>
+
+        <!--LINK PARA VOLTAR PARA PÁGINA SÓCIOS-->
+        <a href="socios-real.html">Voltar</a>
     </main>
 
     <hr>
     
+    <!--RODAPÉ-->
     <footer align="center">
         <small>
             Copyright 2024 &copy; - Tec. Multimídia
