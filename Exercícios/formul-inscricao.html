@@ -59,7 +59,55 @@
 
                     <!--ESTADO-->
                     <label>Estado</label>
-                    <input type="text" name="estado" placeholder="Informe seu estado">
+                    <select name="estados" required>
+
+                        <!-- SUL -->
+                        <optgroup label="Sul">
+                            <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                            <option value="Santa Catarina">Santa Catarina</option>
+                            <option value="Paraná">Paraná</option>
+                        </optgroup>
+
+                        <!-- SUDESTE -->
+                        <optgroup label="Sudeste">
+                            <option value="São Paulo">São Paulo</option>
+                            <option value="Minas Gerais">Minas Gerais</option>
+                            <option value="Rio De Janeiro">Rio De Janeiro</option>
+                            <option value="Espírito Santo">Espírito Santo</option>
+                        </optgroup>
+
+                        <!-- CENTRO-OESTE -->
+                        <optgroup label="Centro-Oeste">
+                            <option value="Mato Grosso">Mato Grosso</option>
+                            <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                            <option value="Goiás">Goiás</option>
+                            <option value="Distrito Federal">Distrito Federal</option>
+                        </optgroup>
+
+                        <!-- NORTE -->
+                        <optgroup label="Norte">
+                            <option value="Acre">Acre</option>
+                            <option value="Rondônia">Rondônia</option>
+                            <option value="Amazonas">Amazonas</option>
+                            <option value="Roraima">Roraima</option>
+                            <option value="Pará">Pará</option>
+                            <option value="Amapá">Amapá</option>
+                            <option value="Tocantins">Tocantins</option>
+                        </optgroup>
+
+                        <!-- NORDESTE -->
+                        <optgroup label="Nordeste">
+                            <option value="Maranhão">Maranhão</option>
+                            <option value="Piauí">Piauí</option>
+                            <option value="Bahia">Bahia</option>
+                            <option value="Ceará">Ceará</option>
+                            <option value="Pernambuco">Pernambuco</option>
+                            <option value="Sergipe">Sergipe</option>
+                            <option value="Alagoas">Alagoas</option>
+                            <option value="Paraíba">Paraíba</option>
+                            <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                        </optgroup>
+                    </select>
                 </fieldset>
 
                 <!--CAMPO PARA ESCOLHER O PLANO-->
@@ -112,7 +160,7 @@
         <br>
 
         <!--LINK PARA VOLTAR PARA PÁGINA SÓCIOS-->
-        <a href="socios-real.html">Voltar</a>
+        <a href="socios-real.html"><button>Voltar</button></a>
     </main>
 
     <hr>
