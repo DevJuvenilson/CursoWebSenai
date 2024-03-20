@@ -1,0 +1,11 @@
+ul{
+    padding-left: 0;
+    list-style-type: none;
+}
+
+li{
+    background-color: blue;
+    line-height: 2;
+    margin-bottom: 4px;
+    color: white;
+}
