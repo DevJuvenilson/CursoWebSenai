@@ -1,0 +1,91 @@
+
+/* ESTILIZANDO O FUNDO DO CORPO */
+body {
+    background-color: rgb(10, 10, 10);
+}
+
+/* ESTILIZANDO O FUNDO DO CONTEÚDO PRINCIPAL */
+.principal {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    margin: 0px 100px 0px 100px;
+    border-radius: 15px;
+    height: 1050px;
+}
+
+/* ESTILIZANDO A IMAGEM LOGO */
+.logo {
+    text-align: center;
+}
+
+/* ESTILIZANDO A DIV QUE CONTÉM OS LINKS */
+.nav {
+    text-align: center;
+    background-color: rgb(10, 10, 10);
+    height: 50px;
+    margin: auto;
+}
+
+/* ESTILIZANDO A ABA DE NAVEGAÇÃO */
+nav {
+    padding: 15px;
+}
+
+/* ESTILIZANDO OS LINKS DA NAVEGAÇÃO */
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+/* ESTILIZANDO OS LINKS DO MENU PARA QUANDO CURSOR PASSAR POR CIMA*/
+a:hover {
+    color: rgb(0, 126, 126);
+    background-color: azure;
+    padding: 10px;
+}
+
+/* ESTILIZANDO O TITULO COM SOMBRA */
+main>h1 {
+    color: black;
+    text-align: center;
+    text-shadow: 3px 3px 2px grey;
+}
+
+/* ESTILIZANDO OS TEXTOS DA DIV */
+main>div>p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ESTILIZANDO ESTILIZANDO A IMAGEM DA DIV COM TEXTO */
+main>div>img {
+    float: left;
+    margin: 20px;
+    padding: 10px;
+}
+
+/* ESTILIZANDO AS HRS DE DIVISAO */
+.divisao {
+    background-color: #007D9C;
+    height: 7px;
+    border: none;
+    clear: both;
+}
+
+/* ESTILIZANDO AS FOTOS DAS SEDES */
+.sedes>div>img {
+    width: 320px;
+}
+
+/* ESTILIZANDO AS DIVS COM FOTOS DAS SEDES */
+.sedes>div {
+    float: left;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+/* ESTILIZANDO O RODAPÉ */
+footer {
+    text-align: center;
+}
