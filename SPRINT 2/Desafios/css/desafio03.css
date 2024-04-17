@@ -85,6 +85,11 @@ main>div>img {
     text-align: center;
 }
 
+/* TIRANDO OS FLOATs */
+.clear {
+    clear: both;
+}
+
 /* ESTILIZANDO O RODAPÉ */
 footer {
     text-align: center;
