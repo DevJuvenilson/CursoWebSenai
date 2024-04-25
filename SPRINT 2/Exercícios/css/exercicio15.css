@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -11,7 +11,7 @@ header{
 }
 
 main{
-    margin-top: 260px;
+    margin-top: 200px;
 }
 
 p{
@@ -21,19 +21,9 @@ p{
     padding: 20px;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-}
-
-a:hover{
-    color: #8d99ae;
-}
-
 .menu_top{
     width: 100%;
     height: 170px;
-    border-bottom: 3px solid #780000;
     border-top: 10px solid #780000;
     background-color: white;
 }
@@ -54,17 +44,66 @@ a:hover{
     padding-top: 20px;
 }
 
+.clear{clear: both;}
+
 .menu_down{
     background-color: #780000;
-    height: 50px;
+    height: 40px;
     text-align: center;
 }
 
-.menu{
-    position: relative;
-    top: 15px;
-    border-right: solid 2px #fff;
-    padding: 10px;
+.menu ul{
+    padding: 0;
+    width: 700px;
 }
 
-.clear{clear: both;}
+.menu ul li{
+    color: white;
+    float: left;
+    width: 160px;
+    height: 40px;
+    display: inline;
+    text-align: center;
+    line-height: 40px;
+    position: static;
+    background-color: #780000;
+}
+
+.menu ul li:hover{
+    background-color: rgb(74, 11, 11);
+    cursor: pointer;
+}
+
+.menu ul ul{
+    display: none;
+}
+
+.menu ul li:hover > ul{
+    display: block;
+    cursor: pointer;
+}
+
+.menu ul ul ul{
+    margin-left: 102px;
+    position: absolute;
+    top: 0px;
+}
+
+.menu ul ul li{
+    background-color: rgb(179, 27, 27);
+}
+
+.menu ul ul li:hover{
+    background-color: rgb(166, 3, 3);
+    cursor: pointer;
+}
+
+.menu ul ul ul li:hover{
+    background-color: rgb(88, 2, 2);
+    cursor: pointer;
+}
+
+.meio{
+    margin: 0;
+    padding: 0;
+}
