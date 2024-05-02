@@ -63,7 +63,6 @@ p{
     width: 160px;
     height: 40px;
     display: inline;
-    text-align: center;
     line-height: 40px;
     position: static;
     background-color: #780000;
@@ -72,6 +71,7 @@ p{
 .menu ul li:hover{
     background-color: rgb(74, 11, 11);
     cursor: pointer;
+    transition: 1s;
 }
 
 .menu ul ul{

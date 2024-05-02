@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    float: left;
+    background-color: #faedcd;
+    border-top: #432818 solid 50px;
+}
+
+header img{
+    padding: 10px;
+    float: left;
+}
+
+header h1{
+    float: left;
+    text-align: center;
+    font-size: 50px;
+    padding-left: 5px;
+    padding-top: 25px;
+}
+
+.campo_pesquisa{
+    float: left;
+    padding-top: 40px;
+    padding-left: 30px;
+}
+
+.campo_pesquisa input{
+    border: black solid 3px;
+}
+
+.redes_sociais img{
+    padding-left: 40px;
+}
+
+.navegacao{
+    background-color: #432818;
+}
+
+.navegacao ul li{
+    display: inline-block;
+}
