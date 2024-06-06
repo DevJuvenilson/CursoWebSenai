@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../../bootstrap-5.2.3-dist/css/bootstrap.min.css">
 
     <!-- CSS Local -->
-    <link rel="stylesheet" href="teste.css">
+    <link rel="stylesheet" href="exemplo-modal.css">
 </head>
 
 <body>
@@ -91,7 +91,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="contato">
         <p>&copy; 2024 Loja de Roupas. Todos os direitos reservados.</p>
     </footer>
 
@@ -111,28 +111,40 @@
 
                 <div class="modal-body">
                     <form action="#" method="post">
+
+                        <div class="row">
+                            <div class="google row">
+                                <img class="col-2 offset-2" src="../Exercícios/html/img/google.png">
+                                <p class="col-6">Entrar com Google</p>
+                            </div>
+
+                            <hr class="col-3">
+                            <p class="col-5">ou continuar com email</p>
+                            <hr class="col-3">
+                        </div>
+
                         <!-- E-MAIL -->
-                        <div>
+                        <div class="col-12">
                             <input class="email" type="email" name="email" placeholder="Digite seu email..." required>
                         </div>
 
                         <!-- SENHA -->
-                        <div>
+                        <div class="col-12">
                             <input class="senha" type="password" name="password" placeholder="Digite sua senha..." required>
                         </div>
 
                         <!-- BOTÃO DE REALIZAR Log-In -->
-                        <div>
+                        <div class="divsubmit">
                             <input class="submit" type="submit" value="CONCLUIR">
                         </div>
                     </form>
                 </div>
 
                 <div class="modal-footer">
-                    <div class="row" style="border: solid blue 1px;">
+                    <div class="row col-12">
                         <a href="#" class="col-12">Esqueceu a senha?</a>
-                        <a href="#" class="col-3">Cadastre-se</a>
-                        <button type="button" class="btn btn-secondary col-5 offset-4" data-bs-dismiss="modal">
+                        <a href="#" class="col-4">Cadastre-se</a>
+                        <button type="button" class="btn btn-danger col-4 offset-4" data-bs-dismiss="modal">
                             Cancelar
                         </button>
                     </div>
