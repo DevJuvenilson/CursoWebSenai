@@ -11,10 +11,13 @@
         var nome = prompt('Digite seu nome de usuário:');
         var senha = prompt('Digite sua senha:');
 
-        if (nome === 'Juvenilson' && senha === '2817') {
-            document.write('<h1>ACESSO PERMITIDO!</h1>')
+        var user = 'Juvenilson';
+        var password = '2817'
+
+        if (nome === user && senha === password) {
+            document.write('<h1>ACESSO PERMITIDO!</h1>');
         } else {
-            document.write('<h1>ACESSO NEGADO!</h1>')
+            document.write('<h1>ACESSO NEGADO!</h1>');
         }
         
     </script>
