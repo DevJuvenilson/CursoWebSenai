@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04 - Switch</title>
+</head>
+<body>
+    <script>
+
+        var notaAluno = prompt('Digite sua média: (A até F)');
+
+        switch(notaAluno) {
+            case 'A': 
+                document.write('Excelente!');
+                break
+            case 'B':
+                document.write('Ótimo');
+                break
+            case 'C':
+                document.write('Bom');
+                break
+            case 'D':
+                document.write('Regular');
+                break
+            case 'E':
+                document.write('Ruim');
+                break
+            case 'F':
+                document.write('Reprovado');
+                break
+            default:
+                document.write('Você não inseriu nenhum conceito válido :(')
+                break
+        }
+    </script>
+</body>
+</html>

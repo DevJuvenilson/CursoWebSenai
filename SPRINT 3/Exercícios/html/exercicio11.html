@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 05 - Switch</title>
+</head>
+<body>
+    <script>
+
+        var notaAluno = prompt('Quais meses tem (28/30/31) dias: (Insira a quantidade de dias)');
+
+        switch(notaAluno) {
+            case '28': 
+                document.write('Apenas o mês de Fevereiro tem 28 dias');
+                break
+            case '30':
+                document.write('Somente os meses de Abril, Junho, Setembro e Novembro tem 30 dias');
+                break
+            case '31':
+                document.write('Somente os meses de Janeiro, Março, Maio, Julho, Agosto, Outubro e Dezembro tem 31 dias');
+                break
+            default:
+                document.write('Você não inseriu nenhuma quantidade de dias válidos :(')
+                break
+        }
+    </script>
+</body>
+</html>
