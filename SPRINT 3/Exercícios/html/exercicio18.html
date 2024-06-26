@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10 - Módulos Matemáticos</title>
+</head>
+<body>
+    <script>
+
+        function calcularMedia(litros, km) {
+            var media = km/litros;
+
+            return media;
+        }
+
+        var km = parseFloat(prompt('Digite a quilometragem a ser percorrida (só números):'));
+        var litros = parseFloat(prompt('Digite a quantidade de litros (só números):'));
+        var media = Math.round(calcularMedia(litros, km));
+
+        document.write(`A média de km por litros de ${km}km e ${litros}L de gasolina é de ${media}km/L.`);
+
+    </script>
+</body>
+</html>
