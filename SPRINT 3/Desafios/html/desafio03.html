@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../bootstrap-5.2.3-dist/css/bootstrap.min.css">
+
+    <title>Contrato Estudantil</title>
+
+    <style>
+        .container {
+            background: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+
+        var nome = document.getElementById('c_nome').value;
+        let sobrenome = document.getElementById('c_sobrenome').value;
+        let cidade = document.getElementById('c_cidade').value;
+        let estado = document.getElementById('c_estado').value;
+        let cep = document.getElementById('c_cep').value;
+
+        function teste() {
+            document.getElementById('b_enviar').removeAttribute("disabled");
+        }
+
+        function submitButton() {
+            document.getElementById('contrato').value = `Eu ${nome} ${sobrenome} da cidade de ${cidade} do estado de ${estado} do CEP: ${cep}, aceito os termos de condições do contrato estudantil`;
+        }
+
+    </script>
+
+    <div class="container fundo m-10 p-2 rounded">
+        <br>
+        <h1 class="text-center">CADASTRO GERAL</h1>
+
+        <br>
+
+        <form class="m-3">
+            <div class="row">
+                <div class="col-4">
+                    <input type="text" id="c_nome" class="form-control" placeholder="Nome" required>
+                </div>
+                <div class="col-8">
+                    <input type="text" id="c_sobrenome" class="form-control" placeholder="Sobrenome" required>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col-7">
+                    <input type="text" id="c_cidade" class="form-control" placeholder="Cidade" required>
+                </div>
+                <div class="col">
+                    <input type="text" id="c_estado" class="form-control" placeholder="Estado" required>
+                </div>
+                <div class="col">
+                    <input type="text" id="c_cep" class="form-control" placeholder="CEP" required>
+                </div>
+            </div>
+
+            <div class="from-group">
+                <div class="form-text">
+                    <label style="color: black;" for="form-text">Contrato</label>
+                    <br>
+                    <textarea class="form-text" id="contrato" type="text-area"
+                        style="width: 100%; height: 100px; background-color: white;" disabled></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-check">
+                    <input onclick="teste()" class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                    <label for="form-check-input">Aceito os termos e condições</label>
+                </div>
+            </div>
+            
+        </form>
+        
+        <button onclick="submitButton()" class="btn btn-primary" id="b_enviar" type="submit" disabled>Enviar</button>
+
+    </div>
+</body>
+
+</html>
