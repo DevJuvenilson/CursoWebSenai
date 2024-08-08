@@ -13,29 +13,35 @@
         .container {
             background: grey;
         }
+
+        .formulario {
+            margin-top: 30px;
+            border: 1px black solid;
+            border-radius: 5px;
+            padding: 20px;
+            background-color: rgb(181, 181, 181);
+        }
+
+        #contrato {
+            font-size: 20px;
+        }
     </style>
 </head>
 
 <body>
     <script>
+        function removeDisabled(nome, sobrenome, cidade, estado, cep) {
+            if (nome && sobrenome && cidade && estado && cep) {
+                document.getElementById('b_enviar').removeAttribute("disabled");
+            }
+        };
 
-        var nome = document.getElementById('c_nome').value;
-        let sobrenome = document.getElementById('c_sobrenome').value;
-        let cidade = document.getElementById('c_cidade').value;
-        let estado = document.getElementById('c_estado').value;
-        let cep = document.getElementById('c_cep').value;
-
-        function teste() {
-            document.getElementById('b_enviar').removeAttribute("disabled");
-        }
-
-        function submitButton() {
+        function fazContrato(nome, sobrenome, cidade, estado, cep) {
             document.getElementById('contrato').value = `Eu ${nome} ${sobrenome} da cidade de ${cidade} do estado de ${estado} do CEP: ${cep}, aceito os termos de condições do contrato estudantil`;
-        }
-
+        };
     </script>
 
-    <div class="container fundo m-10 p-2 rounded">
+    <div class="container formulario">
         <br>
         <h1 class="text-center">CADASTRO GERAL</h1>
 
@@ -65,25 +71,38 @@
                 </div>
             </div>
 
-            <div class="from-group">
-                <div class="form-text">
-                    <label style="color: black;" for="form-text">Contrato</label>
-                    <br>
-                    <textarea class="form-text" id="contrato" type="text-area"
-                        style="width: 100%; height: 100px; background-color: white;" disabled></textarea>
-                </div>
-            </div>
 
             <div class="form-group">
                 <div class="form-check">
-                    <input onclick="teste()" class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                    <input onclick="removeDisabled(
+                        document.getElementById('c_nome').value,
+                        document.getElementById('c_sobrenome').value,
+                        document.getElementById('c_cidade').value,
+                        document.getElementById('c_estado').value,
+                        document.getElementById('c_cep').value
+                    )" class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
                     <label for="form-check-input">Aceito os termos e condições</label>
                 </div>
             </div>
-            
+
         </form>
-        
-        <button onclick="submitButton()" class="btn btn-primary" id="b_enviar" type="submit" disabled>Enviar</button>
+
+        <button onclick="fazContrato(
+            document.getElementById('c_nome').value,
+            document.getElementById('c_sobrenome').value,
+            document.getElementById('c_cidade').value,
+            document.getElementById('c_estado').value,
+            document.getElementById('c_cep').value
+        )" class="btn btn-primary m-3" id="b_enviar" disabled>Enviar</button>
+
+        <div class="form-group m-3">
+            <div class="form-text">
+                <label style="color: black;" for="form-text">Contrato</label>
+                <br>
+                <textarea class="form-text" id="contrato" type="text-area"
+                    style="width: 100%; height: 100px; background-color: white;" disabled></textarea>
+            </div>
+        </div>
 
     </div>
 </body>
